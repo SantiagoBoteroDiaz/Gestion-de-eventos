@@ -1,0 +1,62 @@
+@model GentionDeDeportes.Models.Eventos 
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<div class="container" style="margin-top:60px; max-width:720px;">
+
+    <div class="card z-depth-3" style="border-radius:24px; padding:25px;">
+
+        <div class="center-align">
+            <h4 >Nuevo Evento</h4>
+            <p class="grey-text text-darken-1">
+                Completa los datos para registrar tu evento
+            </p>
+        </div>
+        <form asp-action="Edit">
+            @* id oculto  *@
+            <input type="hidden" name="id" value="@Model.Id"/>
+            
+            <div class="row">
+                <div class="input-field col s12">
+                    <input name="name" type="text"  value="@Model.Name" required>
+                    <label for="name">Nombre del evento</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea name="description" class="materialize-textarea" required>@Model.Description</textarea>
+                    <label class="active">Descripción</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="datetime-local"
+                           name="date"
+                           value="@Model.Date?.ToString("yyyy-MM-ddTHH:mm")" />
+                    <label class="active">Fecha</label>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:35px;">
+                <div class="col s12 right-align">
+
+                    <a class="btn-flat waves-effect" asp-controller="Eventos" asp-action="Dashboard">
+                        Cancelar
+                    </a>
+
+                    <button class="btn blue darken-1">
+                        Guardar
+                    </button>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

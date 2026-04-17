@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ibWBHio60ZU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\boter\\Documents\\GentionDeDeportes\\GentionDeDeportes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\boter\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.15\\microsoft.entityframeworkcore.9.0.15.nupkg.sha512",
+    "C:\\Users\\boter\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.15\\microsoft.entityframeworkcore.abstractions.9.0.15.nupkg.sha512",
+    "C:\\Users\\boter\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.15\\microsoft.entityframeworkcore.analyzers.9.0.15.nupkg.sha512",
+    "C:\\Users\\boter\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0\\microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "C:\\Users\\boter\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\boter\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,51 @@
+@model IEnumerable<GentionDeDeportes.Models.Eventos>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<div class="section center-align">
+    <h2 class="bold">Dashboard</h2>
+    <p class="flow-text">
+       Administra tus torneos de forma sencilla y rapida.
+    </p>
+    <a asp-controller="Eventos" asp-action="Index">Volver</a>
+</div>
+<a class="btn blue darken-1 right" asp-controller="Eventos" asp-action="CreateEvent">Crear evento</a>
+<table class="striped centered highlight ">
+    <thead class="thead-dark"> 
+    <tr>
+        <th scope="col">Id asas</th>
+        <th scope="col">Nombre del evento</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">fecha</th>
+        <th scope="col">Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var evento in Model)
+    {
+        
+        <tr>
+            <th scope="row">@evento.Id</th>
+            <td>@evento.Name</td>
+            <td>@evento.Description</td>
+            <td>@evento.Date</td>
+            <td class="text-center">
+                <form asp-action="Delete"
+                      asp-controller="Eventos"
+                      asp-route-id="@evento.Id"
+                      method="post">
+                <a asp-action="EditEvent" asp-controller="Eventos" asp-route-id="@evento.Id" class="btn lime">
+                    Editar
+                </a>
+
+                    <button type="submit" class="btn red">
+                        Eliminar
+                    </button>
+
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
