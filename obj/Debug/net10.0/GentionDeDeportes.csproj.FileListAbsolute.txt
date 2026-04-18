@@ -102,3 +102,4 @@ C:\Users\boter\Documents\GentionDeDeportes\obj\Debug\net10.0\refint\GentionDeDep
 C:\Users\boter\Documents\GentionDeDeportes\obj\Debug\net10.0\GentionDeDeportes.pdb
 C:\Users\boter\Documents\GentionDeDeportes\obj\Debug\net10.0\GentionDeDeportes.genruntimeconfig.cache
 C:\Users\boter\Documents\GentionDeDeportes\obj\Debug\net10.0\ref\GentionDeDeportes.dll
+C:\Users\boter\Documents\GentionDeDeportes\obj\Debug\net10.0\GentionDeDeportes.sourcelink.json

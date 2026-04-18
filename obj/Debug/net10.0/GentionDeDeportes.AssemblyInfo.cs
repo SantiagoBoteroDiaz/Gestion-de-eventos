@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GentionDeDeportes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0efbb2e0f740be7a5f7b55180a7a7c6e8731dcf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GentionDeDeportes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GentionDeDeportes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
